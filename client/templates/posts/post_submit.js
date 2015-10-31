@@ -1,4 +1,4 @@
-Template.postSubmit.event({
+Template.postSubmit.events({
   'submit form': function(e) {
     e.preventDefault();
 
@@ -8,6 +8,6 @@ Template.postSubmit.event({
     };
 
     post._id = Posts.insert(post);
-    Router.go('postPage',post);
+    Router.go('postPage', post);
   }
 });
